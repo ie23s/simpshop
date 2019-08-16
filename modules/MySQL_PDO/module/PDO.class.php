@@ -139,6 +139,7 @@ class DB
 					$parametersType = false;
 				}
 				foreach ($this->parameters as $column => $value) {
+				    $value;
 					$this->sQuery->bindParam($parametersType ? intval($column) : ":" . $column, $this->parameters[$column]); //It would be query after loop end(before 'sQuery->execute()').It is wrong to use $value.
 				}
 			}
