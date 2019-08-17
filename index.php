@@ -33,4 +33,5 @@ class Main {
 }
 $main = new Main();
 $main->load();
+Main::$init->unload();
 print_r(Main::$init->configurations);
