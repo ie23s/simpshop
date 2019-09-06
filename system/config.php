@@ -5,5 +5,5 @@
 namespace ie23s\simpshop\configuration\main;
 
 class Config {
-    public $modules = array('MySQL_PDO');
+    public $modules = array('Display');
 }

@@ -9,7 +9,7 @@ namespace ie23s\simpshop\main;
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-
+define('__ROOT__', __DIR__);
 require_once __DIR__.'/system/init.php';
 
 use ie23s;
@@ -34,4 +34,3 @@ class Main {
 $main = new Main();
 $main->load();
 Main::$init->unload();
-print_r(Main::$init->configurations);

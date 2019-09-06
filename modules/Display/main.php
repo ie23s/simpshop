@@ -17,8 +17,11 @@ class Main implements Module {
     }
     function load() {
         $this->module = new Display();
+        $this->module->loadUserInterface(__ROOT__.'/templates', 'Default');
     }
     public function unload()
-    {}
+    {
+        $this->module->display();
+    }
 
 }

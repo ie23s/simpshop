@@ -1,10 +1,7 @@
 <?php
 namespace ie23s\simpshop\modules;
 
-interface Module {
-    public $module;
-    public $config;
-    
+interface Module {    
     public function load();
     public function unload();
 } 
