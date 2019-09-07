@@ -12,6 +12,8 @@
 			{else}
 				Я ПИДАР!
 			{/if}
+			{file=lol.tpl}
+			
 		</nav>
 	</body>
 </html>

@@ -10,7 +10,7 @@ class Modules {
     public $modules_path = array();
     public $configurations = array();
     
-    
+    public function __construct() {}
     public function loadModule($name) {
         if(isset($this->modules[$name])) return;
         require_once main\Main::$__DIR . '/modules/'. $name . "/main.php";

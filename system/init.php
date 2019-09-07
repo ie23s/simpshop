@@ -9,6 +9,7 @@ use ie23s\simpshop\system\engine\Modules;
 
 require_once __DIR__.'/config.php';
 require_once __ROOT__.'/modules/module.php';
+require_once __ROOT__.'/system/engine/engine.php';
 
 class Init {
     public $configuration;
